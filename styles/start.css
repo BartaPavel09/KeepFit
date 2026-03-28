@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../images/bi.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+p{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+} 
+/**********************************************************************************************************/
+.Meniu {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left:  20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  background-color: #00000080;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height:70px;
+}
+#imgdis {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+#imgdis img,
+#imgdis div {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border:0px;
+}
+.img_logo_meniu
+{
+  height: 50px;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.logo-container{
+
+  border-right: 2px solid #ccc;
+}
+.logo-container:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+.sageata {
+  height: 50px;
+  cursor: pointer;
+}
+.Discover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:0px;
+  text-decoration: none;
+  height:70px;
+}
+.Discover-container:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+/**********************************************************************************************************/
+.log-out{
+  position: relative; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0px;
+  height:70px;
+  width: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.log-out:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+.dropbtn {
+  background-color: none;
+  color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: none;
+  padding-bottom: 0px;
+  padding-top: 12px;
+}
+.dropdown-content {
+  margin-top: 71px;
+  display: none;
+  position: absolute;
+  background-color: #00000080;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  z-index: 2;
+  margin-left: 0px;
+  margin-right: 0px;
+  height:50px;
+  width: 100px;
+  float: left;
+}
+.dropdown-content:hover{
+  background-color: #ffffff33;
+}
+.dropdown-content a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 16px; 
+  text-decoration: none;
+  display: block; 
+  white-space: nowrap; 
+  text-align: center;
+}
+/**********************************************************************************************************/
+.options-container {
+  margin-top: 70px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.option {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5e00b0;
+  backdrop-filter: blur(20px);
+
+  box-shadow: 1px 1px 10px  #202020;
+  border-radius: 30px;
+  width: 250px;
+  height: 240px;
+  
+  padding: 10px 20px;
+  margin: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.option:hover {
+  background-color: #ff5e00bf;
+  backdrop-filter: blur(20px);
+}
+.option > a, .option > p {
+  color:white;
+
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Helvetica;
+  text-align: center;
+  width: fit-content;
+}
+.option:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 10px #202020;
+}
+/**********************************************************************************************************/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000080;
+  backdrop-filter: blur(20px);
+}
+.modal-content {
+  background-color: #000000;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius:5px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-buttons button {
+  padding: 10px;
+  margin: 5px;
+}
+/**********************************************************************************************************/
+@media (max-width: 768px) {
+  .Meniu {
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    padding: 10px 0; 
+  }
+  .options-container {
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 0;
+  }
+  .option {
+    width: 200px;
+    margin: 10px;
+    height: auto; 
+    padding: 15px;
+  }
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+  body{
+    overflow: auto;
+    background-image:url("../images/bi.jpeg") ;
+    background-size: auto;
+  }
+}

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-color: #0f0f0f;
+    padding: 0px;
+    overflow: auto;
+    background-image: url("../images/cl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+} 
+h1 {
+    margin-top: 90px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ff7002, #ff1b02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    width: 800px;
+    height: 550px;
+    background-color: #000000d1;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgb(32, 32, 32);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: lightgrey
+}
+
+input,
+select {
+    width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #F76B1C;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F76B1C;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+/**********************************************************************************************************/
+.Meniu {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;  
+  justify-content: space-between;
+  padding-left:  20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  background-color: #000000e5;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  height:70px;
+}
+/**********************************************************************************************************/
+#imgdis {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+#imgdis img,
+#imgdis div {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border:0px;
+}
+.img_logo_meniu
+{
+  height: 50px;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.logo-container{
+
+  border-right: 2px solid #ccc;
+}
+.logo-container:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+.sageata {
+  height: 50px;
+  cursor: pointer;
+}
+.Discover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:0px;
+  text-decoration: none;
+  height:70px;
+}
+.Discover-container:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+  

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/cl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:0px;
+    text-decoration: none;
+    height:70px;
+  }
+.home-container:hover {
+    background-color:#ffffff33;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+    justify-content: space-between;
+    padding-left:  20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    background-color: #202020a8;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    height:70px;
+}
+h1 {
+    margin-left: 10px;
+    color: rgb(249, 249, 249);
+}
+.content {
+    margin-top: 160px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+img{border-radius: 10px;}
+.text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(8px); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #FFF; 
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    line-height: 1.5; 
+    border-radius: 10px; 
+}
+.text p {
+    text-align: center;
+    max-width: 500px; 
+}
+.image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Register</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=".\styles\register.css">
+  <link rel="icon" type="image/x-icon" href=".\images\keepfit-favicon-color.png">
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="Meniu">
+      <div id="imgdis">
+        <div style="display:flex; align-items:center;" class="logo-container">
+          <a href="index.html"><img src=".\images\logo simplu\png\logo-no-background.png" alt="Logo"
+              class="img_logo_meniu"></a>
+        </div>
+        <div>
+          <a href="\KeepFit\Discover.html" class="Discover-container">
+            <p>Discover</p>
+          </a>
+        </div>
+      </div>
+      <div class="Log_in-container">
+        <a href=".\Log_In.php" style="text-decoration: none;" class="Log_in">
+          <p>Log in</p>
+        </a>
+      </div>
+    </div>
+    <div class="Meniu_register_container">
+      <div class="Meniu_register">
+        <form action=".\php\register.php" method="POST">
+          <input type="text" id="email" name="email" placeholder="Email" required>
+          <input type="text" id="username" name="username" placeholder="Username" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <button id="register" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
